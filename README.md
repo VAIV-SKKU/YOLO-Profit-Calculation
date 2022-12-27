@@ -9,13 +9,11 @@ There are two options in calculating the profit's from the YOLOv7 detection mode
 ## How to Calculate Average Profit
 
 1. Insert the address of the folder containing the detected csv files to the path in pair_csv_create.py / five_day_sell.py. 
-2. 
 ex) path = os.path.join("/home/ubuntu/2022_VAIV_Cho/VAIV/Yolo/Code/runs/detect/Merge_0.7_2006_best_pair2/signals")
 
 2. Run the file
 
 3. Copy the address of the folder containing the recently created csv files and go into the 'cal' folder and insert it into the path in profit_compare.py.  
-4. 
 ex) path = os.path.join("/home/ubuntu/2022_VAIV_JSPARK/YOLOv7/yolov7/Merge_0.7_pair_2006_best")
 
 4. Run the file. This would create a csv file containing the total profits of each individual stock. 
