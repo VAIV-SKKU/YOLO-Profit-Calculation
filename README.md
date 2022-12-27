@@ -26,13 +26,35 @@ ex) path = os.path.join("/home/ubuntu/2022_VAIV_Cho/VAIV/Yolo/Code/runs/detect/M
 ```
 2. Run the file
 
+```
+python five_day_sell.py
+
+python pair_csv_create.py
+```
+
 3. Copy the address of the folder containing the recently created csv files and go into the 'cal' folder and insert it into the path in profit_compare.py.  
 ```
 ex) path = os.path.join("/home/ubuntu/2022_VAIV_JSPARK/YOLOv7/yolov7/Merge_0.7_pair_2006_best")
 ```
 4. Run the file. This would create a csv file containing the total profits of each individual stock. 
 
+```
+python profit_compare.py
+```
+
 5. Copy the address of that csv file and insert it into profit_average.py
+
+```
+filename = open("/home/ubuntu/2022_VAIV_JSPARK/YOLOv7/yolov7/Merge_0.7_pair_2006_best/cal/2019_Accumulated Profit Results.csv", "r")
+
+```
+6. Run the file
+
+```
+python profit_average.py
+```
+
+
 
 
 
