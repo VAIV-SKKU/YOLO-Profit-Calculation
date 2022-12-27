@@ -8,7 +8,7 @@ There are two options in calculating the profit's from the YOLOv7 detection mode
 
 ## How to Calculate Average Profit
 
-1. Insert the address of the folder containing the detected csv files to the path in pair_csv_create.py / five_day_sell.py. 
+1. Insert the address of the folder containing the detected csv files to the path in pair_csv_create.py / five_day_sell.py.
 ex) path = os.path.join("/home/ubuntu/2022_VAIV_Cho/VAIV/Yolo/Code/runs/detect/Merge_0.7_2006_best_pair2/signals")
 
 2. Run the file
