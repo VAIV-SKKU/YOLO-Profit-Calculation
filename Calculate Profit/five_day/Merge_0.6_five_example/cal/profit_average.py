@@ -31,7 +31,7 @@ ticker = []
 
 # We must first run the profit_compare.py file and use the csv file created from that file and input it in the following filename.
 
-filename = open("/home/ubuntu/2022_VAIV_JSPARK/YOLOv7/yolov7/Merge_0.6_pair_2006_best/cal/2019Accumulated Profit Results.csv", "r")
+filename = open("[PATH_OF_CSV_FILE", "r") # ex) YOLO-Profit-Calculation/Calculate Profit/five_day/Merge_0.6_five_example/cal/2019Accumulated Profit Results.csv
 
                 
 
