@@ -31,7 +31,7 @@ ticker = []
 
 # We put in the folder that contains the csv files that we want to calculate.
 
-path = os.path.join("/home/ubuntu/2022_VAIV_JSPARK/YOLOv7/yolov7/Merge_0.6_pair_example")
+path = os.path.join("[PATH_OF_CSV_FILE]") # ex) YOLO-Profit-Calculation/Calculate Profit/five_day/Merge_0.6_pair_example
 
 csv_files = glob.glob(path + "/*.csv")
 
