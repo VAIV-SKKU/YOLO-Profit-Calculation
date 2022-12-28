@@ -36,7 +36,7 @@ runs
 ```
 ex) path = os.path.join("[DETECT_CSV_FILE_PATH]")
 ```
-2. Run the file
+2. Run the file. This will create the transaction list of each individual stock into a csv format.
 
 ```
 python five_day_sell.py
@@ -44,7 +44,7 @@ python five_day_sell.py
 python pair_csv_create.py
 ```
 
-3. Copy the address of the folder containing the recently created csv files and go into the 'cal' folder and insert it into the path in profit_compare.py.  
+3. Copy the address of the folder containing the recently created csv files and go into the 'cal' folder and insert the copied address into the path in profit_compare.py.  
 ```
 ex) path = os.path.join("[CSV_FILE_PATH]")
 ```
