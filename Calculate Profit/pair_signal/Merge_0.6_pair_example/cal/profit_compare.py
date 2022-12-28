@@ -31,15 +31,8 @@ path = os.path.join("[PATH_OF_CSV_FILE]") # ex) YOLO-Profit-Calculation/Calculat
 csv_files = glob.glob(path + "/*.csv")
 
 for file in csv_files:
- #   print(file)
     filename = open(file, "r")
-  #  print(filename)
 
-                
-        #old_df = open(file, 'r')
-        #  old_df = pd.read_csv(file ,index_col=0) #  마지막 날  buy-sell matching csv 
-                #    old_df.reset_index(inplace=True, drop=True)
- #   print("We opened the file")
     csv_file = csv.DictReader(filename)
     ticker = []
     profit = 0
@@ -47,7 +40,6 @@ for file in csv_files:
     percentage = []
     profit_percentage = 0
 
-        #print(csv_file)
         
         # iterating over each row and append
         # values to empty list
@@ -55,11 +47,9 @@ for file in csv_files:
         ticker.append(col['Ticker'])
         principal.append(col['Principal'])
         percentage.append(col['Total Profit'])
-        #  ticker = old_df['Ticker'].tolist()
-    #print(label)
-    #break
+        
     if len(ticker) > 0:
-       #print(len(ticker)),
+       
         print(ticker[0])
         ticker_check = ticker[0]
         length = len(principal) - 1
@@ -77,10 +67,7 @@ for file in csv_files:
                    
 profit_pair_df = pd.DataFrame(profit_dict,columns=['Ticker','Total Profit', 'Profit Percentage'])
                                             #3 dataframe을 csv로 생성
-#profit_pair_df.sort_values(by='Buy_Date', inplace= True) # 동일한 날짜 별로 정렬, 오름차순.
 profit_pair_df.reset_index(inplace=True, drop=True)
 profit_pair_df.to_csv("2019_Accumulated Profit Results.csv",encoding='UTF-8-sig',index='False')
-    #if counter == 1:
-        #break
-    #counter += 1
+
     
