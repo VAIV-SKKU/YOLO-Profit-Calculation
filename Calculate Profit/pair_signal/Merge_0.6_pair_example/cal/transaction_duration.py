@@ -29,21 +29,15 @@ ticker = []
 duration = []
 
 
-path = os.path.join("/home/ubuntu/2022_VAIV_JSPARK/YOLOv7/yolov7/Merge_0.7_pair_2006_")
+path = os.path.join("[PATH_OF_CSV_FILE]") # ex) YOLO-Profit-Calculation/Calculate Profit/pair_signal/Merge_0.6_pair_example
 
 csv_files = glob.glob(path + "/*.csv")
 
 print("start")
 for file in csv_files:
- #   print(file)
     filename = open(file, "r")
-  #  print(filename)
 
                 
-        #old_df = open(file, 'r')
-        #  old_df = pd.read_csv(file ,index_col=0) #  마지막 날  buy-sell matching csv 
-                #    old_df.reset_index(inplace=True, drop=True)
- #   print("We opened the file")
     csv_file = csv.DictReader(filename)
     ticker = []
     profit = 0
@@ -53,7 +47,6 @@ for file in csv_files:
     buy_date =""
     sell_date = ""
 
-        #print(csv_file)
         
         # iterating over each row and append
         # values to empty list
@@ -61,7 +54,6 @@ for file in csv_files:
         ticker.append(col['Ticker'])
         sell_date = col['Sell_Date']
         buy_date = col['Buy_Date']
-        #  ticker = old_df['Ticker'].tolist()
         
         print(sell_date)
         print(buy_date)
@@ -74,23 +66,8 @@ for file in csv_files:
         print(duration)
 
 
-    #print(label)
-    #break
     if len(ticker) > 0:
-       #print(len(ticker)),
         print(ticker[0])
-
-
-
-
-
-
-
-        #profit = float(principal[length])
-        #accumulate += profit
-        #profit_percentage = float(percentage[length])
-
-        #profit_row= [ ticker_check, round(profit,2), round(profit_percentage,2) ]
        
 
     
