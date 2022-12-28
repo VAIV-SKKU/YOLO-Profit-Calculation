@@ -26,7 +26,7 @@ csv_files = []
 
 ticker = []    
 
-path = os.path.join("/home/ubuntu/2022_VAIV_JSPARK/YOLOv7/yolov7/Merge_0.7_pair_2006_best")
+path = os.path.join("[PATH_OF_CSV_FILE]") # ex) YOLO-Profit-Calculation/Calculate Profit/pair_signal/Merge_0.6_pair_example
 
 csv_files = glob.glob(path + "/*.csv")
 
