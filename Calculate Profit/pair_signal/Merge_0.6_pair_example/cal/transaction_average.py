@@ -60,9 +60,6 @@ if len(ticker) > 0:
                    
 profit_pair_df = pd.DataFrame(profit_dict,columns=['Average Transaction'])
                                             #3 dataframe을 csv로 생성
-#profit_pair_df.sort_values(by='Buy_Date', inplace= True) # 동일한 날짜 별로 정렬, 오름차순.
 profit_pair_df.reset_index(inplace=True, drop=True)
 profit_pair_df.to_csv("2019TEST_Merge_0.7 Average Transaction Results.csv",encoding='UTF-8-sig',index='False')
-    #if counter == 1:
-        #break
-    #counter += 1
+
