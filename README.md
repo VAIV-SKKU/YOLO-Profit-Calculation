@@ -20,7 +20,19 @@ There are two options in calculating the profit's from the YOLOv7 detection mode
 ```
 ## How to Calculate Average Profit
 
-1. Insert the address of the folder containing the detected csv files to the path in pair_csv_create.py / five_day_sell.py.
+```
+runs
+└── detect
+      └── [DUMMY_RUN]
+            ├── images
+            ├── labels  
+            ├── signals
+                 ├── 000020.csv
+                 └── ...
+
+```
+
+1. Insert the address of the 'signal' folder which contains the detected csv files to the path in pair_csv_create.py or five_day_sell.py.
 ```
 ex) path = os.path.join("[DETECT_CSV_FILE_PATH]")
 ```
