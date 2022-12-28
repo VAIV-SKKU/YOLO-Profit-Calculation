@@ -47,7 +47,7 @@ i = 0
 ticker_check =""
 
 print("Outside")
-path = os.path.join("/home/ubuntu/2022_VAIV_Cho/VAIV/Yolo/Code/runs/detect/Merge_0.5_2006_5days_best2/signals")
+path = os.path.join("[DETECT_CSV_FILE_PATH]")
 
 csv_files = glob.glob(path + "/*.csv")
 
