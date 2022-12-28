@@ -47,7 +47,7 @@ probability = []
 i = 0
 
 print("Outside")
-path = os.path.join("/home/ubuntu/2022_VAIV_Cho/VAIV/Yolo/Code/runs/detect/Merge_0.7_2006_best_pair2/signals")
+path = os.path.join("[DETECT_CSV_FILE_PATH]")
 
 csv_files = glob.glob(path + "/*.csv")
 
