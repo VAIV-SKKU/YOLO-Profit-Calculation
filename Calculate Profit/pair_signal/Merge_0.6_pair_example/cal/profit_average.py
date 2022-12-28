@@ -26,7 +26,7 @@ csv_files = []
 
 ticker = []    
 
-filename = open("[PATH_OF_CSV_FILE", "r") # ex) YOLO-Profit-Calculation/Calculate Profit/five_day/Merge_0.6_five_example/cal/2019Accumulated Profit Results.csv
+filename = open("[PATH_OF_CSV_FILE", "r") # ex) YOLO-Profit-Calculation/Calculate Profit/pair_signal/Merge_0.6_five_example/cal/2019Accumulated Profit Results.csv
 
 csv_file = csv.DictReader(filename)
 ticker = []
