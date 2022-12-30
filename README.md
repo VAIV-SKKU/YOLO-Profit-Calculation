@@ -2,6 +2,21 @@
 Calculates the yearly profits from the results of YOLO's detect model
 
 
+## Getting Started
+
+### Clone Repository
+
+```
+https://github.com/VAIV-SKKU/YOLO-Profit-Calculation.git
+
+```
+
+### Prerequisite
+
+```
+pip install -r requirements.txt
+
+```
 ## Calculating Profit
 
 There are two options in calculating the profit's from the YOLOv7 detection model- profits of five days later and profits of buy/sell pairs.
